@@ -10,7 +10,7 @@ const RankingSingle = () => {
     setLoading(true);
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/ranking`);
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_API_RANKING}`);
         setRanking(response.data.ranking);
         setLoading(false);
       } catch (error) {
