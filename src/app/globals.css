@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --primary-bg-color: #fbf7eb;
+  --secondary-bg-color: #ff9b48;
+  --third-bg-color: #c9c04b;
+  --fourth-bg-color: #f4c6e3;
+  --primary-text-color: #000;
+  --cancel-text-color: #F57170;
+}
+
+body{
+  font-family: var(--font-roboto);
+}
+
+h1, h2{
+  font-family: var(--font-inter);
+}
+
+h1{
+  font-size: 30px;
+
+  margin-bottom: 20px;
+}
+
+.btn{
+  border-radius: 90px;
+  background-color: chocolate;
+  padding: 10px 20px;
+  color: white;
+}
+
+.btn:hover{
+  background-color: darkorange;
+} 
